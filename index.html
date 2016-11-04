@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>VueJs</title>
+	</head>
+	<body>
+		<!-- View App -->
+		<div id="app">
+			<h1>{{ message }}</h1>
+			<input type="text" v-model="message">
+			<pre>
+				{{ $data | json }}
+			</pre>
+		</div>
+		<script src="node_modules/vue/dist/vue.js"></script>
+		<script>
+			// called model
+			/*var data = {
+				message: 'Hello Rizwan in VueJs World!'
+			};*/
+			// called veiw model
+			/*new Vue({
+				el: '#app',
+				data: {
+					message: 'Hello Rizwan in VueJs World!'
+				}
+			});*/
+			var app = new Vue({
+				el: '#app',
+				data: {
+				message: 'Hello Vue!'
+				}
+			})
+		</script>
+	</body>
+</html>
